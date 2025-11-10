@@ -1,0 +1,50 @@
+header {
+  background-color: white;
+  padding: 15px;
+  word-spacing: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+
+div {
+    background-color: white;
+    display: flex;
+    justify-content: space-around;
+}
+
+input[type="text"] {
+  width: 500px;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  height: 20px;
+}
+
+div[name="1"] {
+    background-color: white;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: space-around;
+}
+
+div[name="2"] {
+    background-color: white;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+div[class="footer"] {
+    background-color: black;
+    color: white;
+    text-align: left;
+}
+
+iframe {      
+    display: block;    
+    height: 100vh;   
+    width: 100vw;    
+    border: none;
+}

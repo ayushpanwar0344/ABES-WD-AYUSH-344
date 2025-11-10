@@ -7,7 +7,7 @@
 </head>
 <body>
     <form>
-        <table border="0" cellpadding="6" cellspacing="0" align="center">
+        <table border="0" cellpadding="1" cellspacing="0" align="center">
             <tr>
                 <td>Name:</td>
                 <td><input type="text" name="name"></td>
@@ -32,8 +32,31 @@
                 </td>
             </tr>
             <tr>
-                <td><label for="date_of_birth">Date of Birth:</label></td>
-                <td> <input type="date" id="date_of_birth" name="date_of_birth"></td>
+                <td>Date of Birth:</td>
+                <td align="left">
+                    <select name="date">
+                        <option value="date">date</option>
+                        <option value="1">1</option>
+                        <option value="2">2</option>
+                        <option value="3">3</option>
+                    </select>
+                </td>
+                <td>
+                    <select name="month">
+                        <option value="month">month</option>
+                        <option value="1">1</option>
+                        <option value="2">2</option>
+                        <option value="3">3</option>
+                    </select>
+                </td>
+                <td>
+                    <select name="year">
+                        <option value="year">year</option>
+                        <option value="2005">2005</option>
+                        <option value="2006">2006</option>
+                        <option value="2007">2007</option>
+                    </select>
+                </td>
             </tr>
             <tr>
                 <td>Languages known:</td>
@@ -48,7 +71,13 @@
                 <td>Address:</td>
                 <td><textarea name="address" id="address"></textarea></td>
             </tr>
+            <tr>
+                <td colspan="2" align="center">
+                    <button>Submit</button>
+                </td>
         </table>
     </form>
+    <script src="validation.js"></script>
+
 </body>
 </html>
